@@ -7,7 +7,7 @@ filetype on
 " Theme
 syntax on
 set background=dark
-colorscheme dracula
+colorscheme dante
 
 set guifont=Menlo\ Regular:h18
 set colorcolumn=90
