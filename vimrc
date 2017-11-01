@@ -1,15 +1,20 @@
 " Custom Vim editor configuration Domingos Teruel <mingomax@dteruel.net.br>
 " reference http://marcgg.com/blog/2016/03/01/vimrc-example/
+" https://github.com/pierangelo1982/dotfiles/blob/master/.vimrc
 
 execute pathogen#infect()
+call pathogen#helptags()
 
 filetype on
-" Theme
+set nocompatible
 syntax on
+filetype plugin indent on
+
+" Theme
 set background=dark
 colorscheme dante
 
-set guifont=Menlo\ Regular:h18
+set guifont=Menlo\ Bold\ for\ Powerline:h16
 set colorcolumn=90
 
 set nowrapscan    " Nao prossegue procura apos fim/inicio do arquivo
@@ -21,7 +26,8 @@ set nobackup      " Dont keep a backup file
 set textwidth=0   " Dont wrap words by default
 set ruler         " Show the line and column numbers of the cursor
 set t_kb=
-set showcmd       " Show partial command in status line.
+set showcmd       " Show me what I'm typing.
+set showmode      " Show current mode
 set showmatch     " Show matching brackets.
 set incsearch      " Incremental search
 set autowrite     " Automatically save before commands like :next &amp; :make
